@@ -1,0 +1,24 @@
+# Sass
+.sass-cache
+
+# Grunt
+/node_modules/
+/storefront/
+npm-debug.log
+
+# Codekit
+config.codekit
+
+# Transifex
+.transifexrc
+/languages/*.po
+/languages/*.mo
+
+# PhpStorm
+.idea
+
+# macOS
+.DS_Store
+
+/_notes/
+dwsync.xml
