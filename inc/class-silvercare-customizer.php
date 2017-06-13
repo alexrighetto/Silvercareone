@@ -48,7 +48,7 @@ class Silvercare_Customizer {
 			'storefront_button_text_color'           => '#ffffff',
 			'storefront_header_background_color'     => '#ffffff',
 			'storefront_footer_background_color'     => '#ffffff',
-			'storefront_header_link_color'           => '#ffffff',
+			'storefront_header_link_color'           => '#595959',
 			'storefront_header_text_color'           => '#ffffff',
 			'storefront_button_alt_text_color'       => '#ffffff',
 			'storefront_footer_link_color'           => '#111111',
