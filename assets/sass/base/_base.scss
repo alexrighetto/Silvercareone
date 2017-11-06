@@ -1,0 +1,313 @@
+.site-header{
+	
+	border-top: none;
+	border-bottom: 1px solid #b8b5a8;
+	//background-color: rgba(0,0,0,0.26);
+}
+	
+
+.woocommerce-breadcrumb,
+			#reviews .commentlist li .comment_container {
+				background-color: rgba(0, 0, 0, .01);
+			}
+	
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.home{
+	
+	
+	
+	.newsletter_section{
+		padding-top: ms(9);
+		padding-bottom: ms(4);
+		
+		.mc4wp-form-basic{
+			margin-left:auto;
+			margin-right:auto;
+			max-width:400px;
+		}
+	}
+	.entry-header{
+		display:none;
+	}
+	
+	.text_thin{
+		h2{
+		    font-weight: 200;
+			font-size: 2.5em;
+			font-family: "Helvetica Neue";
+			line-height: 1em;
+			b{
+				font-weight: 500;
+			}
+            
+		}
+        
+        @include susy-media (max-width $handheld) {
+            h2{
+                text-align:center;
+                font-size:2em;
+            }
+        }
+	}
+	
+	.testine_section{
+		padding-top: ms(6);
+		padding-top: ms(6);
+       
+        @include susy-media (max-width $handheld) {
+            .button{
+                margin-left:auto;
+                margin-right:auto;
+                width:80%;
+                text-align: center;
+                display:block;
+            }
+        }
+	}
+	.categorie_section{
+		padding-top: ms(9);
+		padding-bottom: ms(4);
+	
+		.products_row{
+			border-top:1px solid #103655;
+			border-bottom: 1px solid #103655;
+			padding-top: ms(7) ;
+			padding-bottom: ms(2) ;
+			
+			h2{
+				font-size:2em;
+				font-weight:200;
+				float:right;
+				text-align:right;
+				padding: ms(7) ms(1) ms(1) ms(2);
+				
+			}
+             @include susy-media (max-width $handheld) {
+                 h2{
+                     font-size:1.5em;
+                     text-align: center;
+                     float: none;
+                     padding: ms(7) ms(2) ms(1) ms(2);
+                     max-width: 75%;
+                     margin-left:auto;
+                     margin-right: auto;
+                 }
+            }
+		}
+		
+        @include susy-media (max-width $handheld) {
+            .button{margin-left:auto; margin-right:auto; width:80%; text-align: center}
+        }
+		.one_cat_btn, .ricariche_cat_btn, .dentifrici_cat_btn, .kids_cat_btn {
+		display:block;
+		height:272px;
+		background-position: left center;
+		background-color: transparent;
+		background-repeat:no-repeat;
+		} 
+         @include susy-media (max-width $handheld) {
+             .one_cat_btn, .ricariche_cat_btn, .dentifrici_cat_btn, .kids_cat_btn {
+                background-position: center center;
+             }
+             
+        }
+        
+		.one_cat_btn{
+			h2{color:#fff}
+			background-image: url('assets/images/spazzolini.png')
+		}
+		.ricariche_cat_btn{
+			h2{color:#fff}
+			background-image: url('assets/images/ricariche.png')
+		}
+		.dentifrici_cat_btn{
+			background-image: url('assets/images/dentifrici.png')
+		}
+		.kids_cat_btn{
+			background-image: url('assets/images/kids.png')
+		}
+		
+		
+		
+	} 
+	.kids_section{
+		background-image:  url('assets/images/pattern.jpg' );
+		background-repeat:repeat;
+		border-bottom:10px solid #ffd927;
+	}
+	
+	
+	
+	.water_section{
+		position:relative;
+		z-index:1;
+		background-color: #ffffff;
+		background-image:  url('assets/images/water.jpg' );
+		background-position: center top !important;
+		background-repeat:no-repeat;
+		padding-top: ms(9);
+		padding-bottom: ms(4);
+		color: #fff;
+		@include susy-media($desktop) {
+		text-align:right;
+		}
+		@include susy-media (max-width $handheld) {
+            .button{
+                margin-left:auto;
+                margin-right:auto;
+                width:80%;
+                text-align: center;
+                display:block;
+            }
+            
+        }
+        @include susy-media($desktop) {
+		  h2{
+			color: #fff;
+			text-align:right;
+			color: rgb(255, 255, 255);
+            }
+		}
+        @include susy-media (max-width $handheld) {
+         h2{
+             color: #2b2b2b;
+            }
+        }
+	}
+	.spazzolino_img{
+		
+		z-index: 3;
+		width:79px;
+		height:584px;
+		background-image:  url('assets/images/spazzolino.png' );
+		background-position: center top !important;
+		
+		@include susy-media($desktop) {
+			display:bock;
+			position: absolute;
+    		top: -200px;
+    		left: 290px;
+		}
+        
+        @include susy-media (max-width $handheld) {
+            display:none;
+        }
+	}
+	
+	.spazzolino_shadow{
+		
+		z-index: 2;
+		width:137px;
+		height:346px;
+		background-image:  url('assets/images/ombra.png' );
+		background-position: center top !important;
+		
+		@include susy-media($desktop) {
+			display:bock;
+			position: absolute;
+    		top: -40px;
+    		left: 280px;
+		}
+         @include susy-media (max-width $handheld) {
+            display:none;
+        }
+	}
+	
+	.stage_1{
+		position: absolute;
+		top: 36px;
+    	left: 30px;
+		z-index: 4;
+		width:154px;
+		height:154px;
+		background-image:  url('assets/images/stage_1.png' );
+		background-position: center top !important;
+        
+        @include susy-media (max-width $handheld) {
+            display:none;
+        }
+	}
+	.stage_2{
+		position: absolute;
+		position: absolute;
+		top: 140px;
+    	left: 104px;
+		z-index: 5;
+		width:154px;
+		height:154px;
+		background-image:  url('assets/images/stage_2.png' );
+		background-position: center top !important;
+	   
+        @include susy-media (max-width $handheld) {
+            display:none;
+        }
+    }
+	
+	
+}
+
+.social_section{
+		margin-top: ms(3);
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00a8e3+0,115c8a+99 */
+		background: #00a8e3; /* Old browsers */
+		background: -moz-radial-gradient(center, ellipse cover, #00a8e3 0%, #115c8a 99%); /* FF3.6-15 */
+		background: -webkit-radial-gradient(center, ellipse cover, #00a8e3 0%,#115c8a 99%); /* Chrome10-25,Safari5.1-6 */
+		background: radial-gradient(ellipse at center, #00a8e3 0%,#115c8a 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a8e3', endColorstr='#115c8a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	@include clearfix;	
+		
+		.social_cta, .social_cta p, .all_icons, .all_icons a:link{
+			color:#ffffff;
+			
+		}
+		
+		padding:ms(1);
+			.social_cta{
+				@include span(8 of 12);
+				p{
+					text-align:right;
+					margin-bottom:0;
+					line-height:3em;
+				}
+				
+			}
+			.all_icons{
+				@include span(last 4 of 12);
+				
+				a{
+					@include gallery(1 of 5);
+					font-size:2em;
+					
+				}
+			}
+		
+		@include susy-media (max-width $handheld) {
+			.social_cta{
+				
+				@include span(5 of 12);
+			}
+			.all_icons{
+				@include span(last 7 of 12);
+			}
+		}
+		
+	}
+
+.email_field{
+    float:left;
+    width:300px;
+}
+.newletter_btn{
+    float:left;
+}

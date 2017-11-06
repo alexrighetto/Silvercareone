@@ -1,0 +1,183 @@
+/**
+ * Strictly Layout Styles
+ */
+
+
+
+@include susy-media($desktop) {
+	
+	.storefront-primary-navigation {
+		clear: both;
+		@include clearfix;
+		
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+1,edf2f4+43,c7dbe1+100 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+1,edf2f4+43,1863a7+100 */
+background: #edeeed;
+		
+		margin-left: -99em;
+		margin-right: -99em;
+		padding-left: 99em;
+		padding-right: 99em;
+	}
+
+	
+	
+	.site-header {
+		padding-top: 0;
+		padding-bottom: 0;
+		right:0;
+		left:0;
+		transition: all 0.4s ease;
+		position: fixed;
+		position:fixed;
+        
+		@include shadows();
+		.col-full{
+			position:relative;
+		}
+		.site-branding {
+			display: block;
+			@include span(3 of 12);
+			clear: none;
+			margin-top: ms(1);
+			margin-bottom:0;
+
+			img {
+				height: auto;
+				max-width: 100%;
+				max-height: none;
+			}
+		}
+		
+		
+	}
+	.site-content {
+			margin-top:9em;
+	}
+	
+	.site-header.sticky{
+		
+		.secondary-navigation{
+			display:none;
+		}
+		
+		
+		
+	
+	}
+	
+	.site-header.sticky + .site-content {
+		margin-top:4em !important;
+	}
+	
+	
+	.woocommerce-active {
+		.site-header {
+			.secondary-navigation {
+				@include span(12 of 12);
+			}
+
+			.site-search {
+				@include span(last 3 of 12);
+				clear: none;
+			}
+
+			.main-navigation {
+				@include span(6 of 12);
+				clear: none;
+			}
+
+			.site-header-cart {
+				@include span(last 3 of 12);
+				margin-bottom: 0;
+			}
+		}
+	}
+	
+/**
+	 * Secondary Navigation
+	 */
+	.secondary-navigation {
+		margin: 0;
+		width: auto;
+		clear: none;
+		line-height: 1;
+
+		.menu {
+			font-size: ms(1);
+			width: auto;
+			float: right;
+
+			> li:hover > a {
+				text-decoration: none;
+			}
+
+			> li > a {
+				position: relative;
+                color: #282825;
+				&:before {
+					content: "";
+					display: block;
+					width: 1px;
+					height: 25%;
+					background-color: rgba(#000,0.05);
+					position: absolute;
+					top: 37.5%;
+					left: -3px;
+                    
+				}
+			}
+
+			> li:first-child a:before {
+				display: none;
+			}
+
+			ul {
+				a {
+					padding: .326em ms(-2);
+					background: rgba(#000,0.05);
+				}
+
+				li:first-child a {
+					padding-top: 1em;
+				}
+
+				li:last-child a {
+					padding-bottom: 1em;
+				}
+
+				ul {
+					margin-top: -ms(-2);
+				}
+			}
+
+			a {
+				padding: ms(2) ms(-1);
+				font-weight: 300;
+				color: lighten( $color_body, 20% );
+
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+
+
+@include susy-media (max-width $container-width) {
+
+}
+
+@include susy-media (max-width $handheld) {
+	.ubermenu-responsive-toggle{
+		display:none;
+	}
+	
+    
+    .home.blog .site-header, .home.page:not(.page-template-template-homepage) .site-header, .home.post-type-archive-product .site-header{
+        margin-bottom:0
+    }
+    .ubermenu-responsive-toggle{display:none}
+}
