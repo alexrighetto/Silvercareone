@@ -7,15 +7,6 @@
 
 
 
-/**
- * Load the individual classes required by this theme
- */
-require_once( 'inc/class-silvercare-design.php' );
-
-require_once( 'inc/class-silvercare-checkout.php' );
-require_once( 'inc/class-silvercare-customizer.php' );
-require_once( 'inc/class-silvercare-template.php' );
-require_once( 'inc/class-silvercare-integrations.php' );
 
 /**
  * Do not add custom code / snippets here.
@@ -307,3 +298,15 @@ add_filter( 'woocommerce_table_rate_query_rates_args', 'filter_shipping_2', 10 )
 		$translated = str_ireplace('Original Text', 'Your Replacment Text', $translated);
 		return $translated;
     }
+
+
+
+/**
+ * Load the individual classes required by this theme
+ */
+require_once( 'inc/class-silvercare-design.php' );
+
+require_once( 'inc/class-silvercare-checkout.php' );
+require_once( 'inc/class-silvercare-customizer.php' );
+require_once( 'inc/class-silvercare-template.php' );
+require_once( 'inc/class-silvercare-integrations.php' );
