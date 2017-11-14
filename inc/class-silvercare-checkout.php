@@ -27,6 +27,7 @@ class Silvercare_checkout {
 		add_action( 'woocommerce_view_order', array( $this,'my_display_order_data'));
 		add_action( 'woocommerce_admin_order_data_after_order_details', array( $this,'my_display_order_data_in_admin' ));
 		add_filter(	'woocommerce_email_order_meta_keys', array( $this,'my_email_order_meta_keys'));
+		add_filter(	'woocommerce_checkout_process', array( $this,'my_custom_checkout_field_process'));
 
 	}
 	
@@ -36,7 +37,7 @@ function my_filter_checkout_fields($fields){
 				'some_field' => array(
 					'type' => 'text',
 					'label'     => __('Tax code / VAT ID', 'silvercare'),
-					'placeholder'   => _x('Tax code / VAT ID', 'placeholder', 'silvercare'),
+					'placeholder'   => _x('This information is required by Italian law ', 'placeholder', 'silvercare'),
 					'required'  => true
                 ),
             );
@@ -63,14 +64,33 @@ function my_extra_checkout_fields(){
 <?php }
 
 
+		function my_custom_checkout_field_process() {
+
+
+			$tax_id_field = $_POST['some_field'];
+
+			// Check if set, if its not set add an error.
+
+
+			if ( isset( $tax_id_field ) ) {
+
+				$tax_id_field_lenght = strlen( $tax_id_field );
+
+			    if ( $tax_id_field_lenght  < 16) {
+					wc_add_notice( __( 'Please enter your tax code or VAT ID', 'silvercare' ), 'error' );
+				}
+			}
+		}
+
+
 // Salvataggio extra fields
 function my_save_extra_checkout_fields( $order_id ){
     // Controllo di sicurezza
-    if( isset( $_POST['some_field'] ) ) {
+    $tax_id_field = $_POST['some_field'];
+    if( isset( $tax_id_field ) ) {
         update_post_meta( $order_id, '_some_field', sanitize_text_field( $_POST['some_field'] ) );
     }
-    
-	
+
 }
 
 

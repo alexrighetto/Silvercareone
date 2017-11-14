@@ -1,59 +1,36 @@
-/*
-Error: File to import not found or unreadable: bourbon.
-       Load paths:
-         /Applications/Adobe Dreamweaver CC 2017/Configuration/SassFrameworks/bourbon
-         /Applications/Adobe Dreamweaver CC 2017/Configuration/SassFrameworks/neat
-         /Applications/Adobe Dreamweaver CC 2017/Configuration/SassFrameworks/base
-        on line 8 of /Applications/MAMP/htdocs/silvercareone/htdocs/wp-content/themes/Silvercareone/assets/sass/woocommerce/extensions/mix-and-match.scss
+/**
+ * WooCommerce Mix and Match
+ */
+/**
+ * Imports
+ */
+.mnm_table .product-thumbnail,
+.mnm_table .product-name,
+.mnm_table .product-quantity,
+.mnm_table .container-quantity {
+  padding: 0.6180469716em 0.875em !important; }
 
-3:  *\/
-4: 
-5: /**
-6:  * Imports
-7:  *\/
-8: @import 'bourbon';
-9: @import '../../../../assets/sass/utils/variables';
-10: @import '../../../../assets/sass/vendors/modular-scale';
-11: 
-12: .mnm_table {
-13: 	.product-thumbnail,
+.mnm_table .mnm_item img {
+  max-width: 100%; }
 
-Backtrace:
-/Applications/MAMP/htdocs/silvercareone/htdocs/wp-content/themes/Silvercareone/assets/sass/woocommerce/extensions/mix-and-match.scss:8
-/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/import_node.rb:67:in `rescue in import'
-/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/import_node.rb:45:in `import'
-/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/import_node.rb:28:in `imported_file'
-/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/import_node.rb:37:in `css_import?'
-/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:313:in `visit_import'
-/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
-/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `map'
-/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/root_node.rb:20:in `render'
-/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/engine.rb:281:in `render'
-/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/exec/sass_scss.rb:400:in `run'
-/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/exec/base.rb:52:in `parse'
-/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/exec/base.rb:19:in `parse!'
-/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/bin/sass:13:in `<top (required)>'
-/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/bin/sass:34:in `load'
-/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/bin/sass:34:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: bourbon.\A        Load paths:\A          /Applications/Adobe Dreamweaver CC 2017/Configuration/SassFrameworks/bourbon\A          /Applications/Adobe Dreamweaver CC 2017/Configuration/SassFrameworks/neat\A          /Applications/Adobe Dreamweaver CC 2017/Configuration/SassFrameworks/base\A         on line 8 of /Applications/MAMP/htdocs/silvercareone/htdocs/wp-content/themes/Silvercareone/assets/sass/woocommerce/extensions/mix-and-match.scss\A \A 3:  */\A 4: \A 5: /**\A 6:  * Imports\A 7:  */\A 8: @import 'bourbon';\A 9: @import '../../../../assets/sass/utils/variables';\A 10: @import '../../../../assets/sass/vendors/modular-scale';\A 11: \A 12: .mnm_table {\A 13: 	.product-thumbnail,"; }
+.mnm_table .product-name {
+  vertical-align: middle; }
+
+.cart .mnm_table_item .product-thumbnail img,
+.shop_table .mnm_table_item .product-thumbnail img {
+  max-width: 2.617924em !important; }
+
+.cart .mnm_table_item .mnm_table_item_indent,
+.shop_table .mnm_table_item .mnm_table_item_indent {
+  padding-left: 0; }
+
+.cart .mnm_table_item .product-name,
+.cart .mnm_table_item .product-price,
+.cart .mnm_table_item .product-quantity,
+.shop_table .mnm_table_item .product-name,
+.shop_table .mnm_table_item .product-price,
+.shop_table .mnm_table_item .product-quantity {
+  font-size: 1em; }
+
+.mnm_image {
+  max-width: 3.706325903em; }

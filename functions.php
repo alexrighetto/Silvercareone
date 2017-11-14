@@ -7,42 +7,37 @@
 
 
 
-
-/**
- * Do not add custom code / snippets here.
- * While Child Themes are generally recommended for customisations, in this case it is not
- * wise. Modifying this file means that your changes will be lost when an automatic update
- * of this theme is performed. Instead, add your customisations to a plugin such as
- * https://github.com/woothemes/theme-customisations
+/*
+ *
+ * Language function
+ *
  */
 
-// remove wp version param from any enqueued scripts
-function vc_remove_wp_ver_css_js( $src ) {
-    if ( strpos( $src, 'ver=' ) )
-        $src = remove_query_arg( 'ver', $src );
-    return $src;
-}
-add_filter( 'style_loader_src', 'vc_remove_wp_ver_css_js', 9999 );
-add_filter( 'script_loader_src', 'vc_remove_wp_ver_css_js', 9999 );
 
 
-
-add_action( 'after_setup_theme', 'silvercareone_lang_setup' );
 function silvercareone_lang_setup() {
     load_child_theme_textdomain( 'silvercare', get_stylesheet_directory() . '/languages' );
 	
 	add_image_size( 'menu-icon', 150, 150, true ); // (ritagliata)
 }
+add_action( 'after_setup_theme', 'silvercareone_lang_setup' );
 
-// add a favicon to your
+/*
+ *
+ * Favicon function
+ *
+ */
 function blog_favicon() {
 echo '<link rel="Shortcut Icon" type="image/x-icon" href="'. get_stylesheet_directory_uri().'/img/favicon.ico" />';
 echo '<link rel="icon" type="image/x-icon" href="'. get_stylesheet_directory_uri().'/img/favicon.ico" />';
 }
-
 add_action('wp_head', 'blog_favicon', 1);
-	
-// Unhook default Thematic functions
+
+/*
+ *
+ * Unhook default storefront function
+ *
+ */
 function unhook_functions() {
 
 	if ( defined('ICL_LANGUAGE_CODE') && ICL_LANGUAGE_CODE !== 'it' ){
@@ -78,16 +73,6 @@ function silvercare_remove_storefront_handheld_footer_bar() {
 }
 
 
-//add_action('storefront_before_content','test_sxz');
-
-
-function test_sxz(){
-	
-	?>
-<div class="clearfix" style="margin-top:143px; margin-bottom:-143px"><img src="https://silvercareone.com/wp-content/uploads/2017/10/ONE_Banner_Promo_20.jpg"></div>
-
-<?php
-}
 
 
 

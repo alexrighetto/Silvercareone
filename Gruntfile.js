@@ -236,10 +236,7 @@ module.exports = function( grunt ) {
 			},
 			frontend: {
 				options: {
-					potFilename: 'silvercare.pot',
-					exclude: [
-						'silvercare/.*' // Exclude deploy directory
-					]
+					potFilename: 'silvercare.pot'
 				}
 			}
 		},
@@ -247,7 +244,7 @@ module.exports = function( grunt ) {
 		// Check textdomain errors.
 		checktextdomain: {
 			options:{
-				text_domain: 'storefront',
+				text_domain: 'silvercare',
 				keywords: [
 					'__:1,2d',
 					'_e:1,2d',

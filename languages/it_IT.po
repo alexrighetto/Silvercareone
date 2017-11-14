@@ -6,12 +6,14 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/woothemes/storefront/issues\n"
 "POT-Creation-Date: 2017-11-14 21:10:25+00:00\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2017-11-14 22:14+0100\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
-"X-Generator: grunt-wp-i18n1.0.1\n"
+"X-Generator: Poedit 2.0.3\n"
+"Last-Translator: Alex Righetto <alexrighetto@gmail.com>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: it_IT\n"
 
 #: functions.php:83
 msgid "Shop Widget Area"
@@ -19,7 +21,7 @@ msgstr ""
 
 #: functions.php:93
 msgid "Newsletter"
-msgstr ""
+msgstr "Newsletter"
 
 #: functions.php:207
 msgid "Inserire il codice fiscale corretto"
@@ -28,27 +30,27 @@ msgstr ""
 #: inc/class-silvercare-checkout.php:39 inc/class-silvercare-checkout.php:102
 #: inc/class-silvercare-checkout.php:117
 msgid "Tax code / VAT ID"
-msgstr ""
+msgstr "Codice Fiscale / P.IVA"
 
 #: inc/class-silvercare-checkout.php:80
 msgid "Please enter your tax code or VAT ID"
-msgstr ""
+msgstr "Inserisci il tuo codice fiscale o partita IVA"
 
 #: inc/class-silvercare-checkout.php:115 inc/class-silvercare-checkout.php:130
 msgid "Extra fields"
-msgstr ""
+msgstr "Campi Aggiuntivi"
 
 #: inc/class-silvercare-design.php:66 inc/class-silvercare.php:85
 msgid "Main Sidebar"
-msgstr ""
+msgstr "Barra laterale principale"
 
 #: inc/class-silvercare-design.php:68 inc/class-silvercare.php:87
 msgid "Widgets in this area will be shown on all posts and pages."
-msgstr ""
+msgstr "I widget in quast'area saranno mostrati in tutti gli articoli e tutte le pagine."
 
 #: inc/class-silvercare-design.php:200
 msgid "Follow us:"
-msgstr ""
+msgstr "Seguici:"
 
 #. Theme Name of the plugin/theme
 msgid "Silver Care Shop"
@@ -65,4 +67,4 @@ msgstr ""
 #: inc/class-silvercare-checkout.php:40
 msgctxt "placeholder"
 msgid "This information is required by Italian law "
-msgstr ""
+msgstr "Queste informazioni sono richieste dalla legge italiana "
